@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .cont {
+        border: 2px solid black;
+        /* display: flex; */
+        position: relative;
+        flex-direction: column;
+        margin: 4rem auto;
+        width: 60%;
+        /* z-index: 3; */
+        /* background: url('./Pic1.jpg');
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat; */
+        height: 70vh;
+    }
+    
+    body {
+        position: relative;
+        z-index: 2;
+    }
+    /* .box {
+        border: 2px solid red;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        color: white;
+        left: 0;
+        height: 100%;
+        font-size: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.2s
+    }
+     */
+    
+    button {
+        top: 50%;
+        z-index: 10;
+        position: absolute;
+        background: red;
+        outline: none;
+        border: none;
+        transition: 0.3s ease-in-out;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .right {
+        right: 0;
+    }
+    
+    .left {
+        left: 0;
+    }
+    
+    .img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .span {
+        background: red;
+        color: white;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        font-size: 1.5rem;
+        z-index: 10;
+    }
+</style>
+
+<body>
+    <div class="cont">
+        <img class="img" src="./Pic1.jpg" alt="">
+        <img class="img" src="./Pic3.jpg" alt="">
+        <img class="img" src="./Pic2.jpg" alt="">
+
+        <button class="left">Left</button>
+        <button class="right">Right</button>
+        <span class="span">1/3</span>
+    </div>
+    <!-- <script>
+        let count = 1;
+        let box = document.querySelector(`.box`);
+        let bright = document.querySelector(`.right`)
+        let bleft = document.querySelector(`.left`);
+        // document.querySelector(`.left`).addEventListener("click", left);
+        // document.querySelector(`.right`).addEventListener("click", right);
+
+
+        // function right() {
+        //     //checker();
+        //     if (count < 3) {
+        //         count++;
+        //         box.innerHTML = `<img src="./Pic${count}.jpg" alt="">`;
+        //         // box.style.background = ` url('./Pic${count}.jpg')`;
+        //     } else {
+        //         bleft.style.background = `black`;
+        //     }
+        // }
+
+        // function left() {
+        //     //checker();
+        //     if (count > 1) {
+        //         count--;
+        //         box.innerHTML = `<img src="./Pic${count}.jpg" alt="">`;
+        //         //box.style.background = `<img src="./Pic${count}.jpg" alt="">`;
+        //     }
+
+        // }
+        //  let count = 0;
+    </script> -->
+</body>
+
+
+</html>
+<script src="./slider.js"></script>
